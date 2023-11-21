@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jpet-test
+  labels:
+    app: jpet-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jpet-test
+  template:
+    metadata:
+      labels:
+        app: jpet-test
+    spec:
+      containers:
+      - name: jpet-test
+        image: jpet-test:0.1
+        ports:
+        - containerPort: 8080
