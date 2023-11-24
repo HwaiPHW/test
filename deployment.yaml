@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: jpet-test
-        image: core.harbor.domain/jpettest/final:0.1
+        image: 172.30.1.186:30003/jpettest/final:0.1
         ports:
         - containerPort: 8080
