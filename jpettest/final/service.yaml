@@ -6,9 +6,6 @@ metadata:
     app: jpet-test
 spec:
   type: NodePort
-  selector:
-    matchLabels:
-      app: jpet-test
   ports:
     - protocol: TCP
       port: 8080
