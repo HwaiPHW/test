@@ -5,6 +5,8 @@ metadata:
   labels:
     app: jpet-test
 spec:
+  selector:
+    app: jpet-test
   type: NodePort
   ports:
     - protocol: TCP
