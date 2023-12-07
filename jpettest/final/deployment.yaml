@@ -13,8 +13,6 @@ spec:
     metadata:
       labels:
         app: jpet-test
-    imagePullSecrets:
-    - name: my-harbor-secret
     spec:
       containers:
       - name: jpet-test
